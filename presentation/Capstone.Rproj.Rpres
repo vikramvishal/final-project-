@@ -1,0 +1,48 @@
+Predict the next word
+========================================================
+author: Vikram Vishal
+date: March 14th, 2016
+autosize: true
+
+What is the App all about?
+========================================================
+
+**TheNextWordApp** is a quick and easy text prediction application.
+
+**TheNextWordApp** can be implemented on mobile devices and offers the following advantages over standard text typing:
+
+* Improved typing speed
+* Improved spelling and accuracy
+
+How the Interface looks like
+========================================================
+![TheNextWord](.\\my-app\\abc.png)
+
+**TheNextWordApp** allows you to enter a custom word or phrase. Once you click "Predict Next Word" button, **TheNextWordApp** displays your selected input before and after the processing. 
+
+**TheNextWordApp** will output the most likely word in red text and a list of possible alternatives.
+
+How does it exactly work?
+========================================================
+
+* **TheNextWord** uses the [HC Corpora][1] data set in determining the word frequency.
+
+* The [HC Corpora][1] data set is screened and processed to removed extraneous characters and then is categorized into the most frequent word combinations (N-grams).
+
+* Using these N-gram frequencies **TheNextWordApp** can take the user submitted sentences and quickly calculate the most likely next word.
+
+[1]: http://www.corpora.heliohost.org/ "HC Corpora"
+
+References
+========================================================
+
+The code to the application can be found on [Github][1]
+
+Working Version of [TheNextWordApp][2]
+
+The source [HC Corpora][3] data set and associated [ReadMe][4].
+
+[1]: https://github.com/vikramvishal/final-project- "Github"
+[2]: https://vikramvishalusf.shinyapps.io/my-app/ "TheNextWordApp"
+[3]: http://www.corpora.heliohost.org/ "HC Corpora"
+[4]: http://www.corpora.heliohost.org/aboutcorpus.html "ReadMe"
